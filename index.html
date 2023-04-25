@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Murtadha Alaali</title>
+    <link rel="icon" href="src/url.png" type="image/png" />
+    <!-- Tailwind CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    .zoom {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .zoom:hover {
+      transform: scale(1.1);
+    }
+
+    .mort {
+      position: relative;
+      animation: mymove 3s;
+      animation-iteration-count: infinite;
+      transition: transform 0.2s ease-in-out;
+    }
+    .h-full {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .h-full:hover {
+      transform: scale(1.05);
+    }
+    @keyframes mymove {
+      50% {
+        scale: 1.2;
+      }
+      100% {
+        scale: 1;
+      }
+    }
+  </style>
+</html>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+  <!-- Navigation Bar -->
+  <nav
+    class="bg-white sticky top-0 z-50"
+    style="border-radius: 0px 0px 20px 20px; box-shadow: 0px -30px 50px"
+  >
+    <div class="max-w-7xl mx-auto px-4 py-2">
+      <div class="flex justify-between items-center">
+        <div>
+          <img
+            src="src/logo.png"
+            alt="logo"
+            class="inline-block w-5 h-7 mr-6"
+          />
+          <a
+            href="#"
+            class="inline-block text-gray-800 font-bold text-lg md:text-xl uppercase"
+            >Murtadha Alaali</a
+          >
+        </div>
+        <div class="flex md:hidden">
+          <button
+            type="button"
+            class="text-gray-800 hover:text-gray-600 focus:outline-none focus:text-gray-600"
+            aria-label="toggle menu"
+            onclick="toggleNav()"
+          >
+            <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+              <path
+                fill-rule="evenodd"
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="hidden md:flex items-center space-x-4">
+          <li>
+            <a
+              class="zoom inline-block text-gray-800 hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium"
+              href="#about"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a
+              class="zoom inline-block text-gray-800 hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium"
+              href="#skills"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              class="zoom inline-block text-gray-800 hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium"
+              href="#work"
+              >Work Experience</a
+            >
+          </li>
+          <li>
+            <a
+              class="zoom inline-block text-gray-800 hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium"
+              href="#photography"
+              >Photography</a
+            >
+          </li>
+          <li>
+            <a
+              class="zoom inline-block text-gray-800 hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium"
+              href="#certifications"
+              >Certifications</a
+            >
+          </li>
+          <li>
+            <a
+              class="zoom inline-block text-gray-800 hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium"
+              href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="md:hidden" id="mobile-menu" style="display: none">
+      <ul class="py-2">
+        <li>
+          <a
+            class="block text-gray-800 hover:text-gray-600 py-2 px-4 border-b border-gray-200 font-medium"
+            href="#about"
+            >About Me</a
+          >
+        </li>
+        <li>
+          <a
+            class="block text-gray-800 hover:text-gray-600 py-2 px-4 border-b border-gray-200 font-medium"
+            href="#skills"
+            >Skills</a
+          >
+        </li>
+        <li>
+          <a
+            class="block text-gray-800 hover:text-gray-600 py-2 px-4 border-b border-gray-200 font-medium"
+            href="#work"
+            >Work Experience</a
+          >
+        </li>
+        <li>
+          <a
+            class="block text-gray-800 hover:text-gray-600 py-2 px-4 border-b border-gray-200 font-medium"
+            href="#photography"
+            >Photography</a
+          >
+        </li>
+        <li>
+          <a
+            class="block text-gray-800 hover:text-gray-600 py-2 px-4 border-b border-gray-200 font-medium"
+            href="#certifications"
+            >Certifications</a
+          >
+        </li>
+        <li>
+          <a
+            class="block text-gray-800 hover:text-gray-600 py-2 px-4 font-medium"
+            href="#contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    function toggleNav() {
+      var nav = document.querySelector("#mobile-menu");
+      if (nav.style.display === "none") {
+        nav.style.display = "block";
+        nav.classList.remove("animate-slide-up");
+        nav.classList.add("animate-slide-down");
+      } else {
+        nav.classList.remove("animate-slide-down");
+        nav.classList.add("animate-slide-up");
+        setTimeout(function () {
+          nav.style.display = "none";
+        }, 500);
+      }
+    }
+  </script>
+
+  <style>
+    .animate-slide-down {
+      animation-name: slide-down;
+      animation-duration: 0.5s;
+    }
+
+    .animate-slide-up {
+      animation-name: slide-up;
+      animation-duration: 0.5s;
+    }
+
+    @keyframes slide-down {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slide-up {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-100%);
+      }
+    }
+  </style>
+  <!-- Profile Photo -->
+  <section class="relative bg-gray-100">
+    <div
+      class="absolute inset-0 bg-gradient-to-r from-gray-400 to-gray-600 animate-gradient-x"
+    ></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <div class="mx-auto max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
+        <img
+          src="src/ME.png"
+          alt="Murtadha Alaali"
+          class="zoom rounded-full shadow-lg mx-auto max-h-96 w-auto"
+        />
+      </div>
+      <h1
+        class="zoom text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-extrabold text-white tracking-tight mt-6 md:mt-10"
+      >
+        Murtadha Alaali
+      </h1>
+    </div>
+  </section>
+</body>
+
+<!-- Profile Photo -->
+
+<!-- About Me Section -->
+<section class="bg-white py-8 pt-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <div class="text-center sm:text-left sm:mb-0">
+        <h2
+          id="about"
+          class="zoom inline-block text-4xl font-bold leading-none mb-2 text-gray-800"
+        >
+          About Me
+        </h2>
+        <p class="text-gray-600 text-lg">
+          Hi, I'm Murtadha Alaali, a Front-End Web Developer, Photographer,
+          Videographer, and Computer Technician. With over 2 years of experience
+          in website development, I am passionate about creating visually
+          appealing and user-friendly websites. I possess a diverse set of
+          technical skills and experience in computer repair, as well as
+          marketing skills. I am always looking to stay up-to-date with the
+          latest technologies and industry trends.
+        </p>
+      </div>
+      <div class="mt-5 sm:mt-0 sm:ml-4">
+        <a
+          href="src/CV.pdf"
+          class="zoom inline-block bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-md mr-2"
+        >
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Skills Section -->
+<section class="bg-gray-100 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2
+      id="skills"
+      class="zoom text-4xl font-bold leading-none mb-2 text-gray-800 text-center"
+    >
+      Skills
+    </h2>
+    <div class="flex justify-center mt-4 text-center">
+      <div class="max-w-lg">
+        <ul>
+          <li class="mb-5">
+            <span class="font-bold mr-2">Front-end Development</span><br />
+            <img
+              src="src/html.png"
+              alt="HTML"
+              class="zoom inline-block w-8 h-8 hover:animate-bounce"
+            />
+            <img
+              src="src/css.png"
+              alt="CSS"
+              class="zoom inline-block w-8 h-8 hover:animate-bounce"
+            />
+            <img
+              src="src/javascript.png"
+              alt="JavaScript"
+              class="zoom inline-block w-8 h-8 hover:animate-bounce"
+            />
+            <img
+              src="src/bootstrap.png"
+              alt="bootstrap"
+              class="zoom inline-block w-8 h-8 hover:animate-bounce"
+            />
+            <img
+              src="src/Tailwindcss.png"
+              alt="Tailwind CSS"
+              class="zoom inline-block w-8 h-8 hover:animate-bounce"
+            />
+            <img
+              src="src/flutter.png"
+              alt="flutter"
+              class="zoom inline-block w-8 h-8 hover:animate-bounce"
+            />
+          </li>
+          <li class="mb-5">
+            <span class="font-bold mr-2">Back-end Development</span><br />
+            <img
+              src="src/sql.png"
+              alt="sql"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/Dart.png"
+              alt="dart"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/firebase.png"
+              alt="Firebase"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/java.png"
+              alt="Java"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/php.png"
+              alt="php"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/python.png"
+              alt="php"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/javascript.png"
+              alt="JavaScript"
+              class="zoom inline-block w-8 h-8 hover:animate-bounce"
+            />
+          </li>
+          <li class="mb-5">
+            <span class="font-bold mr-2">Design</span><br />
+            <img
+              src="src/figma.png"
+              alt="Figma"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/photoshop.png"
+              alt="Adobe Photoshop"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/illustrator.png"
+              alt="Adobe Illustrator"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/premiere.png"
+              alt="Adobe premiere pro"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/audition.png"
+              alt="Adobe Audition"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/ae.png"
+              alt="Adobe After effects"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/xd.png"
+              alt="Adobe XD"
+              class="zoom inline-block w-8 h-8"
+            />
+          </li>
+
+          <li class="mb-2">
+            <span class="font-bold mr-2">IT Support</span><br />
+            <img
+              src="src/windows.png"
+              alt="Windows"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/linux.png"
+              alt="Linux"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/networking.png"
+              alt="Networking"
+              class="zoom inline-block w-8 h-8"
+            />
+            <img
+              src="src/troubleshooting.png"
+              alt="Troubleshooting"
+              class="zoom inline-block w-8 h-8"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Work Experience Section -->
+<section class="bg-white py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2
+      id="work"
+      class="zoom text-4xl font-bold leading-none mb-2 text-gray-800 text-center"
+    >
+      Work Experience
+    </h2>
+    <!-- Developer -->
+    <div class="py-4">
+      <h3 class="text-2xl font-bold mb-2 text-gray-800">Developer</h3>
+      <p class="text-lg mb-2 text-gray-600">
+        Autovita, Bahrain (June 2019 - Present)
+      </p>
+      <p class="mb-2 text-gray-600">
+        Developed responsive and user-friendly websites and apps.
+      </p>
+      <p class="mb-2 text-gray-600">
+        Created and maintained internal design system.
+      </p>
+      <p class="mb-2 text-gray-600">
+        Collaborated with back-end developers to integrate front-end components
+        with server-side API.
+      </p>
+      <p class="mb-2 text-gray-600">
+        Designed and implemented UI/UX improvements based on user feedback and
+        analytics.
+      </p>
+      <br />
+      <p class="mb-2 text-lg font-bold text-gray-800">Projects</p>
+      <div class="text-center">
+        <ul class="text-2xl pl-4 mb-4 font-bold text-gray-800">
+          <li><a href="https://zainabalkhudairi.com/">Zainab Alkhudairi</a></li>
+          <img
+            src="src/ZK1.png"
+            alt="1"
+            class="zoom inline-block my-10 w-80 h-80 rounded-lg"
+          />
+          <img
+            src="src/ZK2.png"
+            alt="2"
+            class="zoom inline-block my-10 w-80 h-80 rounded-lg"
+          />
+          <img
+            src="src/ZK3.png"
+            alt="3"
+            class="zoom inline-block my-10 w-80 h-80 rounded-lg"
+          />
+          <li><a href="#">Senior Project</a></li>
+          <img
+            src="src/SP1.png"
+            alt="1"
+            class="zoom inline-block my-10 w-80 h-80 rounded-lg"
+          />
+          <img
+            src="src/SP2.png"
+            alt="2"
+            class="zoom inline-block my-10 w-80 h-80 rounded-lg"
+          />
+          <img
+            src="src/SP3.png"
+            alt="3"
+            class="zoom inline-block my-10 w-80 h-80 rounded-lg"
+          />
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Computer Technician -->
+<div class="py-4">
+  <h3 class="text-2xl font-bold mb-2 text-gray-800">Computer Technician</h3>
+  <p class="text-lg mb-2 text-gray-600">
+    Computer Repair Shop, Baton Rouge, Louisiana, USA (June 2021 - December
+    2021)
+  </p>
+  <p class="mb-2 text-gray-600">
+    Provided technical support to clients regarding hardware and software
+    issues.
+  </p>
+  <p class="mb-2 text-gray-600">
+    Managed network systems and ensured data security and integrity.
+  </p>
+  <p class="mb-2 text-gray-600">
+    Assisted in setting up and maintaining IT infrastructure for clients.
+  </p>
+</div>
+
+<!-- Video Editing Tutor -->
+<div class="py-4">
+  <h3 class="text-2xl font-bold mb-2 text-gray-800">Video Editing Tutor</h3>
+  <p class="text-lg mb-2 text-gray-600">
+    UK Training Centre, United Kingdom (2019 - Present)
+  </p>
+  <p class="mb-2 text-gray-600">
+    Conducted online and in-person video editing courses for beginners and
+    intermediate learners.
+  </p>
+  <p class="mb-2 text-gray-600">
+    Designed course materials and provided personalized feedback to students.
+  </p>
+  <p class="mb-2 text-gray-600">
+    Created video tutorials for online learning platforms.
+  </p>
+</div>
+
+<!-- Marketing Assistant -->
+<div class="py-4">
+  <h3 class="text-2xl font-bold mb-2 text-gray-800">Marketing Assistant</h3>
+  <p class="text-lg mb-2 text-gray-600">
+    Sayed Mahfood Al Aali, Bahrain (2016 – 2020)
+  </p>
+  <p class="mb-2 text-gray-600">
+    Assisted in planning and executing marketing campaigns for clients.
+  </p>
+  <p class="mb-2 text-gray-600">
+    Conducted market research and analyzed data to identify target audience and
+    improve campaign effectiveness.
+  </p>
+  <p class="mb-2 text-gray-600">
+    Managed social media accounts and created content for clients.
+  </p>
+</div>
+
+<!-- Photography and Videography Section -->
+<section class="bg-gray-200 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2
+      id="photography"
+      class="zoom text-4xl font-bold leading-none mb-2 text-gray-800 text-center"
+    >
+      Photography and Videography
+    </h2>
+    <div class="text-center">
+      <a href="https://www.instagram.com/murtadhaalaali/"
+        ><img
+          src="src/instagram.png"
+          alt="Windows"
+          class="mort inline-block mt-12 w-10 h-10 rounded-lg"
+      /></a>
+    </div>
+    <h2
+      class="zoom font-bold leading-none mt-2 mb-10 text-gray-800 text-center"
+    >
+      @murtadhaalaali
+    </h2>
+
+    <div class="text-center">
+      <ul class="text-2xl pl-4 mb-4 font-bold">
+        <img
+          src="src/Photos/1.png"
+          alt="1"
+          class="zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
+        />
+        <img
+          src="src/Photos/2.png"
+          alt="2"
+          class="zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
+        />
+        <img
+          src="src/Photos/3.png"
+          alt="3"
+          class="zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
+        />
+        <img
+          src="src/Photos/4.png"
+          alt="1"
+          class="zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
+        />
+        <img
+          src="src/Photos/5.png"
+          alt="2"
+          class="zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
+        />
+        <img
+          src="src/Photos/6.png"
+          alt="3"
+          class="zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
+        />
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Video -->
+<div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1">
+  <iframe
+    width="320"
+    height="320"
+    src="https://www.youtube.com/embed/_Opa1YZaK18"
+    class="mt-2 mx-auto rounded-lg"
+  ></iframe>
+  <iframe
+    width="320"
+    height="320"
+    src="https://www.youtube.com/embed/1XO24d7FpNM"
+    class="mt-2 mx-auto rounded-lg"
+  ></iframe>
+  <iframe
+    width="320"
+    height="320"
+    src="https://www.youtube.com/embed/SIWgqBc4SOU"
+    class="mt-2 mx-auto rounded-lg"
+  ></iframe>
+  <iframe
+    width="320"
+    height="320"
+    src="https://www.youtube.com/embed/QvTM90aiu2g"
+    class="mt-2 mx-auto rounded-lg"
+  ></iframe>
+  <iframe
+    width="320"
+    height="320"
+    src="https://www.youtube.com/embed/Pp10suN4dCw"
+    class="mt-2 mx-auto rounded-lg"
+  ></iframe>
+  <iframe
+    width="320"
+    height="320"
+    src="https://www.youtube.com/embed/puazZZ6wYXY"
+    class="mt-2 mx-auto rounded-lg"
+  ></iframe>
+</div>
+<!-- Video -->
+
+<!-- Education Section -->
+<section class="bg-white py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2
+      id="certifications"
+      class="zoom text-4xl font-bold leading-none mb-2 text-gray-800 text-center"
+    >
+      Education
+    </h2>
+    <div class="py-4">
+      <h3 class="text-2xl font-bold mb-2 text-gray-800">
+        Bachelor of Science in Computer Science (2016 - Present)
+      </h3>
+      <img
+        src="src/UOB.png"
+        alt="HTML"
+        class="zoom inline-block w-12 h-14 hover:animate-bounce"
+      />
+      <p class="text-lg mb-2 text-gray-600">University of Bahrain</p>
+
+      <h3 class="text-2xl font-bold mb-2 text-gray-800">
+        High School certificate (2013 - 2016)
+      </h3>
+      <img
+        src="src/tawoon.jpg"
+        alt="HTML"
+        class="zoom inline-block w-12 h-14 hover:animate-bounce"
+      />
+      <p class="text-lg mb-2 text-gray-600">
+        Al Taawon Secondary School - Bahrain
+      </p>
+      <h3 class="text-2xl font-bold mb-2 text-gray-800">
+        Intermediate certificate (2011 - 2013)
+      </h3>
+      <img
+        src="src/moe.png"
+        alt="HTML"
+        class="zoom inline-block w-12 h-14 hover:animate-bounce"
+      />
+      <p class="text-lg mb-2 text-gray-600">
+        A'ali Intermediate Boys School - Bahrain
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications and Courses Section -->
+<section class="bg-gray-200 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2
+      class="zoom text-4xl font-bold leading-none mb-2 text-gray-800 text-center"
+    >
+      Certifications and Courses
+    </h2>
+    <div class="py-4">
+      <h3 class="text-2xl font-bold mb-2 text-gray-800">
+        British Council Certificate in English Language Proficiency
+      </h3>
+      <img
+        src="src/BritishCouncil_Logo.png"
+        alt="HTML"
+        class="zoom inline-block w-18 h-10 hover:animate-bounce"
+      />
+      <img
+        src="src/capital.jpg"
+        alt="HTML"
+        class="zoom inline-block w-14 h-6 hover:animate-bounce"
+      />
+
+      <p class="text-lg mb-2 text-gray-600">
+        Capital School of Cardiff, Cardiff, Wales, United Kingdom (2019)
+      </p>
+    </div>
+
+    <div class="py-4">
+      <h3 class="text-2xl font-bold mb-2 text-gray-800">Toastmaster Course</h3>
+      <img
+        src="src/Toastmasters.png"
+        alt="HTML"
+        class="zoom inline-block w-12 h-10 hover:animate-bounce"
+      />
+      <img
+        src="src/AaliCh.png"
+        alt="HTML"
+        class="zoom inline-block w-12 h-10 hover:animate-bounce"
+      />
+      <p class="text-lg mb-2 text-gray-600">Aali Charity - Bahrain (2018)</p>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section class="bg-white py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2
+      id="contact"
+      class="zoom text-4xl font-bold leading-none mb-2 text-gray-800 text-center"
+    >
+      Contact Me
+    </h2>
+    <div class="py-4">
+      <p class="text-lg mb-2 text-gray-600">Email: malaali2012@gmail.com</p>
+      <p class="text-lg mb-2 text-gray-600">Phone: +97338889964</p>
+      <p class="text-lg mb-2 text-gray-600">
+        Address: Ramli 716, Road 1624, Villa 2659, Bahrain
+      </p>
+    </div>
+
+    <div class="py-4">
+      <h3 class="text-2xl font-bold mb-2 text-gray-800">Connect with Me</h3>
+      <div class="flex justify-center">
+        <a href="#" class="mx-2 text-gray-600 hover:text-gray-800"
+          ><i class="fab fa-facebook-square fa-2x"></i
+        ></a>
+        <a href="#" class="mx-2 text-gray-600 hover:text-gray-800"
+          ><i class="fab fa-twitter-square fa-2x"></i
+        ></a>
+        <a href="#" class="mx-2 text-gray-600 hover:text-gray-800"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-gray-800 py-4">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-center text-gray-400">
+      &copy; 2023 Murtadha Alaali. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- Lightbox Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
