@@ -7,12 +7,9 @@
     <title>Murtadha Alaali</title>
     <link rel="icon" href="src/url.png" type="image/png" />
     <!-- Tailwind CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="//" />
   </head>
   <style>
     .zoom {
@@ -48,7 +45,7 @@
       position: relative;
       transform: translateY(150px);
       opacity: 0;
-      transition: 1s all ease;
+      transition: 0.5s all ease;
     }
     .reveal.active {
       transform: translateY(0);
@@ -58,7 +55,7 @@
       position: relative;
       opacity: 0;
       transform: translateX(-50px);
-      transition: opacity 1s, transform 1s;
+      transition: opacity 0.5s, transform 0.5s;
     }
 
     .reveal-2.active {
@@ -79,7 +76,7 @@
 </html>
 
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-  <!-- Navigation Bar -->
+  <!-- Navigation Bar
   <nav
     class="bg-white sticky top-0 z-50"
     style="border-radius: 0px 0px 20px 20px; box-shadow: 0px -30px 50px"
@@ -248,423 +245,569 @@
       }
     }
   </style>
+   -->
+
   <!-- Profile Photo -->
-  <section class="relative bg-gray-100">
-    <div
-      class="absolute inset-0 bg-gradient-to-r from-gray-400 to-gray-600 animate-gradient-x"
-    ></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-      <div class="mx-auto max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
-        <img
-          src="src/ME.png"
-          alt="Murtadha Alaali"
-          class="zoom rounded-full shadow-lg mx-auto max-h-96 w-auto"
-        />
-      </div>
-      <h1
-        class="zoom text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-extrabold text-white tracking-tight mt-6 md:mt-10"
-      >
-        Murtadha Alaali
-      </h1>
+  <div class="bg-teal-50">
+    <img src="src/logo.png" class="w-10 hidden 2xl:block fixed top-8 left-8 z-50" />
+    <div class="2xl:hidden text-center p-4">
+      <img src="src/logo.png" class="w-10 inline-block" />
     </div>
-  </section>
-</body>
+  
+    <section class="relative bg-teal-50">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <div class="mx-auto max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-teal-700 tracking-tight">
+            Hi! I'm Murtadha Alaali
+          </h1>
+          <h3 class="text-teal-700 text-lg tracking-tight mb-2">
+            Developer / Designer
+          </h3>
+          <h3 class="text-teal-700 text-lg tracking-tight mb-8">
+            Full Stack Developer, Photographer, Videographer, marketer, and Computer Technician.
+          </h3>
+          <div class="pt-4">
+            <div class="relative group">
+              <div class="bg-teal-700 group-hover:bg-teal-600 ease-in-out duration-500 w-80 md:w-96 h-60 md:h-64 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 rounded-lg rotate-3 group-hover:rotate-6 ease-in-out duration-500"></div>
+              <div class="bg-teal-500 group-hover:bg-teal-400 ease-in-out duration-500 w-80 md:w-96 h-60 md:h-64 mx-auto relative z-10 rounded-lg p-0">
+                <img src="src/BG.png" class="bg-cover bg-center rounded-lg group-hover:animate-pulse">
+              </div>
+              
+              <div class="bg-white w-28 h-9 md:w-32 md:h-12 absolute top-10 left-28 transform -translate-x-1/2 -translate-y-4 z-10 rounded-lg group-hover:left-16 ease-in-out duration-500 group-hover:-rotate-6">
+                <img src="src/code.png" class="bg-cover bg-center rounded-lg">
+              </div>
+              <div class="bg-white w-28 h-9 md:w-32 md:h-12 absolute top-44 right-28 transform translate-x-1/2 -translate-y-4 z-10 rounded-lg group-hover:right-16 ease-in-out duration-500 group-hover:rotate-6">
+                <img src="src/Design.png" class="bg-cover bg-center rounded-lg">
+              </div>
+              
+              
+          
+              <img src="src/ME.png" class="absolute -top-12 md:-top-16 left-0 right-0 bottom-auto w-72 md:w-80 h-auto mx-auto z-20 group-hover:scale-105 md:group-hover:scale-110 group-hover:-top-14 md:group-hover:-top-20  ease-in-out duration-500" />
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  
 
-<!-- Profile Photo -->
+    <!-- Profile Photo -->
 
-<!-- About Me Section -->
-<section class="bg-white py-8 pt-20">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="sm:flex sm:items-center sm:justify-between">
-      <div class="sm:text-left sm:mb-0">
-        <h2
-          id="about"
-          class="reveal zoom inline-block text-4xl font-bold leading-none mb-2 text-gray-800"
-        >
-          About Me
-        </h2>
-        <div class="reveal">
-          <p class="text-gray-600 text-lg">
-            Hi, I'm Murtadha Alaali, a Front-End Web Developer, Photographer,
-            Videographer, and Computer Technician. With over 2 years of
-            experience in website development, I am passionate about creating
-            visually appealing and user-friendly websites. I possess a diverse
-            set of technical skills and experience in computer repair, as well
-            as marketing skills. I am always looking to stay up-to-date with the
-            latest technologies and industry trends.
-          </p>
-          <div class="mt-5 sm:mt-5">
-            <a
-              href="src/CV.pdf"
-              class="zoom inline-block bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-md mr-2"
+    <!-- About Me Section -->
+    <section class="bg-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <div class="sm:text-left sm:mb-0">
+            <h2
+              id="about"
+              class="reveal zoom inline-block text-4xl font-bold leading-none mb-2 text-teal-700"
             >
-              Download Resume
-            </a>
+              About Me
+            </h2>
+            <div class="reveal">
+              <p class="text-teal-500 text-lg">
+                Hi, I'm Murtadha Alaali, a Front-End Web Developer,
+                Photographer, Videographer, and Computer Technician. With over 2
+                years of experience in website development, I am passionate
+                about creating visually appealing and user-friendly websites. I
+                possess a diverse set of technical skills and experience in
+                computer repair, as well as marketing skills. I am always
+                looking to stay up-to-date with the latest technologies and
+                industry trends.
+              </p>
+              <div class="mt-5 sm:mt-5">
+                <a
+                  href="src/CV.pdf"
+                  class="zoom inline-block bg-teal-400 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-md mr-2"
+                >
+                  Download Resume
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Skills Section -->
-<section class="bg-gray-100 py-8">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2
-      id="skills"
-      class="reveal zoom text-4xl font-bold leading-none mb-2 text-gray-800 text-center"
-    >
-      Skills
-    </h2>
-    <div class="flex justify-center mt-4 text-center">
-      <div class="max-w-lg">
-        <ul>
-          <li class="reveal mb-5">
-            <span class="font-bold mr-2">Front-end Development</span><br />
-            <img
-              src="src/html.png"
-              alt="HTML"
-              class="zoom inline-block w-8 h-8 hover:animate-bounce"
-            />
-            <img
-              src="src/css.png"
-              alt="CSS"
-              class="zoom inline-block w-8 h-8 hover:animate-bounce"
-            />
-            <img
-              src="src/javascript.png"
-              alt="JavaScript"
-              class="zoom inline-block w-8 h-8 hover:animate-bounce"
-            />
-            <img
-              src="src/bootstrap.png"
-              alt="bootstrap"
-              class="zoom inline-block w-8 h-8 hover:animate-bounce"
-            />
-            <img
-              src="src/Tailwindcss.png"
-              alt="Tailwind CSS"
-              class="zoom inline-block w-8 h-8 hover:animate-bounce"
-            />
-            <img
-              src="src/flutter.png"
-              alt="flutter"
-              class="zoom inline-block w-8 h-8 hover:animate-bounce"
-            />
-          </li>
-          <li class="reveal mb-5">
-            <span class="font-bold mr-2">Back-end Development</span><br />
-            <img
-              src="src/sql.png"
-              alt="sql"
-              class="zoom inline-block w-8 h-8"
-            />
-            <img
-              src="src/Dart.png"
-              alt="dart"
-              class="zoom inline-block w-8 h-8"
-            />
-            <img
-              src="src/firebase.png"
-              alt="Firebase"
-              class="zoom inline-block w-8 h-8"
-            />
-            <img
-              src="src/java.png"
-              alt="Java"
-              class="zoom inline-block w-8 h-8"
-            />
-            <img
-              src="src/php.png"
-              alt="php"
-              class="zoom inline-block w-8 h-8"
-            />
-            <img
-              src="src/python.png"
-              alt="php"
-              class="zoom inline-block w-8 h-8"
-            />
-            <img
-              src="src/javascript.png"
-              alt="JavaScript"
-              class="zoom inline-block w-8 h-8 hover:animate-bounce"
-            />
-          </li>
-          <li class="reveal mb-5">
-            <span class="font-bold mr-2">Design</span><br />
-            <img
-              src="src/figma.png"
-              alt="Figma"
-              class="zoom inline-block w-8 h-8"
-            />
-            <img
-              src="src/photoshop.png"
-              alt="Adobe Photoshop"
-              class="zoom inline-block w-8 h-8"
-            />
-            <img
-              src="src/illustrator.png"
-              alt="Adobe Illustrator"
-              class="zoom inline-block w-8 h-8"
-            />
-            <img
-              src="src/premiere.png"
-              alt="Adobe premiere pro"
-              class="zoom inline-block w-8 h-8"
-            />
-            <img
-              src="src/audition.png"
-              alt="Adobe Audition"
-              class="zoom inline-block w-8 h-8"
-            />
-            <img
-              src="src/ae.png"
-              alt="Adobe After effects"
-              class="zoom inline-block w-8 h-8"
-            />
-            <img
-              src="src/xd.png"
-              alt="Adobe XD"
-              class="zoom inline-block w-8 h-8"
-            />
-          </li>
+    <!-- Skills Section -->
+    <section class="bg-teal-50 py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          id="skills"
+          class="reveal zoom text-4xl font-bold leading-none mb-2 text-teal-700 text-center"
+        >
+          Skills
+        </h2>
+        <div class="flex justify-center mt-4 text-center">
+          <div class="max-w-lg">
+            <ul>
+              <li class="reveal mb-5">
+                <span class="font-bold mr-2 text-teal-600"
+                  >Front-end Development</span
+                ><br />
+                <img
+                  src="src/html.png"
+                  alt="HTML"
+                  class="zoom inline-block w-8 h-8 hover:animate-bounce"
+                />
+                <img
+                  src="src/css.png"
+                  alt="CSS"
+                  class="zoom inline-block w-8 h-8 hover:animate-bounce"
+                />
+                <img
+                  src="src/javascript.png"
+                  alt="JavaScript"
+                  class="zoom inline-block w-8 h-8 hover:animate-bounce"
+                />
+                <img
+                  src="src/bootstrap.png"
+                  alt="bootstrap"
+                  class="zoom inline-block w-8 h-8 hover:animate-bounce"
+                />
+                <img
+                  src="src/Tailwindcss.png"
+                  alt="Tailwind CSS"
+                  class="zoom inline-block w-8 h-8 hover:animate-bounce"
+                />
+                <img
+                  src="src/flutter.png"
+                  alt="flutter"
+                  class="zoom inline-block w-8 h-8 hover:animate-bounce"
+                />
+              </li>
+              <li class="reveal mb-5">
+                <span class="font-bold mr-2 text-teal-600"
+                  >Back-end Development</span
+                ><br />
+                <img
+                  src="src/sql.png"
+                  alt="sql"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/Dart.png"
+                  alt="dart"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/firebase.png"
+                  alt="Firebase"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/java.png"
+                  alt="Java"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/php.png"
+                  alt="php"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/python.png"
+                  alt="php"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/javascript.png"
+                  alt="JavaScript"
+                  class="zoom inline-block w-8 h-8 hover:animate-bounce"
+                />
+              </li>
+              <li class="reveal mb-5">
+                <span class="font-bold mr-2 text-teal-600">Design</span><br />
+                <img
+                  src="src/figma.png"
+                  alt="Figma"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/photoshop.png"
+                  alt="Adobe Photoshop"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/illustrator.png"
+                  alt="Adobe Illustrator"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/premiere.png"
+                  alt="Adobe premiere pro"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/audition.png"
+                  alt="Adobe Audition"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/ae.png"
+                  alt="Adobe After effects"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/xd.png"
+                  alt="Adobe XD"
+                  class="zoom inline-block w-8 h-8"
+                />
+              </li>
 
-          <li class="reveal mb-2">
-            <span class="font-bold mr-2">IT Support</span><br />
-            <img
-              src="src/windows.png"
+              <li class="reveal mb-2">
+                <span class="font-bold mr-2 text-teal-600">IT Support</span
+                ><br />
+                <img
+                  src="src/windows.png"
+                  alt="Windows"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/linux.png"
+                  alt="Linux"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/networking.png"
+                  alt="Networking"
+                  class="zoom inline-block w-8 h-8"
+                />
+                <img
+                  src="src/troubleshooting.png"
+                  alt="Troubleshooting"
+                  class="zoom inline-block w-8 h-8"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Work Experience Section -->
+    <section class="bg-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          id="work"
+          class="reveal zoom text-4xl font-bold leading-none mb-2 text-teal-700 text-center"
+        >
+          Work Experience
+        </h2>
+
+        <!-- Developer -->
+
+        <div class="py-4">
+          <div class="reveal-2">
+            <h3 class="text-2xl font-bold mb-2 text-teal-600">Developer</h3>
+
+            <p class="text-md mb-2 text-teal-600 font-bold">Autovita</p>
+            <p class="mb-2 text-teal-500">
+              Developed responsive and user-friendly websites and apps.
+            </p>
+            <p class="mb-2 text-teal-500">
+              Created and maintained internal design system.
+            </p>
+            <p class="mb-2 text-teal-500">
+              Collaborated with back-end developers to integrate front-end
+              components with server-side API.
+            </p>
+            <p class="mb-2 text-teal-500">
+              Designed and implemented UI/UX improvements based on user feedback
+              and analytics.
+            </p>
+            <p
+              class="mb-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              Freelance
+            </p>
+            <p
+              class="mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              2019 -> Present
+            </p>
+          </div>
+
+          <br />
+          <div class="reveal border-b-2 border-teal-600 w-80 mx-auto mb-8">
+            <p class="text-center reveal mb-2 text-2xl font-bold text-teal-600">
+              My Projects
+            </p>
+          </div>
+          <div class="text-center">
+            <!-- Box -->
+
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              class="mt-2 mb-2 m-1 image inline-block bg-teal-600 group relative justify-between overflow-clip rounded-xl px-4 pt-4 bg-primary aos-init aos-animate"
+              style="max-height: 420px; max-width: 420px"
+            >
+              <div class="flex flex-col items-start justify-start p-2.5">
+                <div class="flex flex-col items-start justify-start space-y-2">
+                  <p class="text-left text-xl font-semibold text-gray-100">
+                    Zainab Alkhudhairi
+                  </p>
+                  <p class="text-left text-sm leading-snug text-gray-100">
+                    As part of the Autovita team, we collaborated to develop
+                    Zainab Alkhudhairi's project as front-end developers.
+                    Together, we designed and developed the user interface,
+                    implemented responsive design and interactive features, and
+                    ensured seamless integration with back-end functionalities.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <img
+                  alt="Zainab"
+                  loading="lazy"
+                  width="450"
+                  height="300"
+                  decoding="async"
+                  data-nimg="1"
+                  class="group-hover:scale-110 duration-300 ease-in-out mx-auto rounded-t-xl"
+                  style="color: transparent; object-fit: cover"
+                  srcset="src/ZK.png"
+                />
+                <a
+                  href="https://zainabalkhudairi.com/"
+                  class="absolute -right-16 top-0 flex items-center gap-3 rounded-lg bg-base-200 p-3 duration-200 group-hover:-right-5 bg-gray-200"
+                >
+                  <img
+                    alt="view"
+                    loading="lazy"
+                    width="20"
+                    height="20"
+                    decoding="async"
+                    data-nimg="1"
+                    style="color: transparent"
+                    src="src/eye.png"
+                  />
+                  <p
+                    class="text-base text-gray-600 opacity-0 duration-200 group-hover:opacity-100"
+                  >
+                    View
+                  </p>
+                </a>
+              </div>
+            </div>
+            <!-- Box -->
+
+            <!-- Box -->
+
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              class="m-1 mb-12 image inline-block bg-teal-600 group relative justify-between overflow-clip rounded-xl px-4 pt-4 bg-primary aos-init aos-animate"
+              style="max-height: 420px; max-width: 420px"
+            >
+              <div class="flex flex-col items-start justify-start p-2.5">
+                <div class="flex flex-col items-start justify-start space-y-2">
+                  <p class="text-left text-xl font-semibold text-gray-100">
+                    Raw App
+                  </p>
+                  <p class="text-left text-sm leading-snug text-gray-100">
+                    Raw app is a senior project I developed using Flutter. It's
+                    an app for booking photographers, videographers, and
+                    equipment rental. Freelancers can manage their bookings,
+                    including canceling or approving, and the app is integrated
+                    with Firebase and Firestore for seamless data management.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <img
+                  alt="RAW"
+                  loading="lazy"
+                  width="450"
+                  height="300"
+                  decoding="async"
+                  data-nimg="1"
+                  class="group-hover:scale-110 duration-300 ease-in-out mx-auto rounded-t-xl"
+                  style="color: transparent; object-fit: cover"
+                  srcset="src/raw.png"
+                />
+                <a
+                  href="https://github.com/muralaali/raw"
+                  class="absolute -right-16 top-0 flex items-center gap-3 rounded-lg bg-base-200 p-3 duration-200 group-hover:-right-5 bg-gray-200"
+                >
+                  <img
+                    alt="view"
+                    loading="lazy"
+                    width="20"
+                    height="20"
+                    decoding="async"
+                    data-nimg="1"
+                    style="color: transparent"
+                    src="src/eye.png"
+                  />
+                  <p
+                    class="text-base text-gray-600 opacity-0 duration-200 group-hover:opacity-100"
+                  >
+                    View
+                  </p>
+                </a>
+              </div>
+            </div>
+            <!-- Box -->
+          </div>
+          <!-- Computer Technician -->
+          <div class="reveal-2 py-4">
+            <h3 class="text-2xl font-bold mb-2 text-teal-600">
+              Computer Technician
+            </h3>
+            <p class="text-md font-bold mb-2 text-teal-600">
+              Computer Repair Shop, Baton Rouge, Louisiana, USA
+            </p>
+            <p class="mb-2 text-teal-500">
+              Provided technical support to clients regarding hardware and
+              software issues.
+            </p>
+            <p class="mb-2 text-teal-500">
+              Managed network systems and ensured data security and integrity.
+            </p>
+            <p class="mb-2 text-teal-500">
+              Assisted in setting up and maintaining IT infrastructure for
+              clients.
+            </p>
+            <p
+              class="text-sm mb-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              Technician
+            </p>
+            <p
+              class="text-sm mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              June 2021 -> Dec 2021
+            </p>
+          </div>
+
+          <!-- Video Editing Tutor -->
+          <div class="reveal-2 py-4">
+            <h3 class="text-2xl font-bold mb-2 text-teal-600">
+              Video Editing Tutor
+            </h3>
+            <p class="text-md mb-2 text-teal-600 font-bold">
+              UK Training Centre, United Kingdom
+            </p>
+            <p class="mb-2 text-teal-500">
+              Conducted online and in-person video editing courses for beginners
+              and intermediate learners.
+            </p>
+            <p class="mb-2 text-teal-500">
+              Designed course materials and provided personalized feedback to
+              students.
+            </p>
+            <p class="mb-2 text-teal-500">
+              Created video tutorials for online learning platforms.
+            </p>
+            <p
+              class="text-sm mb-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              Tutor
+            </p>
+            <p
+              class="text-sm mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              2019 -> Present
+            </p>
+          </div>
+
+          <!-- Marketing Assistant -->
+          <div class="reveal-2 py-4">
+            <h3 class="text-2xl font-bold mb-2 text-teal-600">
+              Marketing Assistant
+            </h3>
+            <p class="text-md font-bold mb-2 text-teal-600">
+              Sayed Mahfood Al Aali, Bahrain
+            </p>
+            <p class="mb-2 text-teal-500">
+              Assisted in planning and executing marketing campaigns for
+              clients.
+            </p>
+            <p class="mb-2 text-teal-500">
+              Conducted market research and analyzed data to identify target
+              audience and improve campaign effectiveness.
+            </p>
+            <p class="mb-2 text-teal-500">
+              Managed social media accounts and created content for clients.
+            </p>
+            <p
+              class="text-sm mb-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              Marketing
+            </p>
+            <p
+              class="text-sm mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              2016 –> 2020
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photography and Videography Section -->
+    <section class="bg-teal-50 pt-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          id="photography"
+          class="reveal zoom text-4xl font-bold leading-none mb-2 text-teal-700 text-center"
+        >
+          Photography and Videography
+        </h2>
+        <div class="text-center">
+          <a href="https://www.instagram.com/murtadhaalaali/"
+            ><img
+              src="src/instagram.png"
               alt="Windows"
-              class="zoom inline-block w-8 h-8"
+              class="reveal mort inline-block mt-12 w-10 h-10 rounded-lg"
+          /></a>
+        </div>
+        <h2
+          class="reveal zoom font-bold leading-none mt-2 mb-10 text-teal-600 text-center"
+        >
+          @murtadhaalaali
+        </h2>
+
+        <div class="text-center mb-12">
+          <ul class="text-2xl pl-4 mb-4 font-bold">
+            <img
+              src="src/Photos/1.png"
+              alt="1"
+              class="image zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
             />
             <img
-              src="src/linux.png"
-              alt="Linux"
-              class="zoom inline-block w-8 h-8"
+              src="src/Photos/2.png"
+              alt="2"
+              class="image zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
             />
             <img
-              src="src/networking.png"
-              alt="Networking"
-              class="zoom inline-block w-8 h-8"
+              src="src/Photos/3.png"
+              alt="3"
+              class="image zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
             />
             <img
-              src="src/troubleshooting.png"
-              alt="Troubleshooting"
-              class="zoom inline-block w-8 h-8"
+              src="src/Photos/4.png"
+              alt="1"
+              class="image zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
             />
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Work Experience Section -->
-<section class="bg-white py-8">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2
-      id="work"
-      class="reveal zoom text-4xl font-bold leading-none mb-2 text-gray-800 text-center"
-    >
-      Work Experience
-    </h2>
-
-    <!-- Developer -->
-
-    <div class="py-4">
-      <div class="reveal-2">
-        <h3 class="text-2xl font-bold mb-2 text-gray-800">Developer</h3>
-        <p class="text-lg mb-2 text-gray-600">
-          Autovita, Bahrain (June 2019 - Present)
-        </p>
-
-        <p class="mb-2 text-gray-600">
-          Developed responsive and user-friendly websites and apps.
-        </p>
-        <p class="mb-2 text-gray-600">
-          Created and maintained internal design system.
-        </p>
-        <p class="mb-2 text-gray-600">
-          Collaborated with back-end developers to integrate front-end
-          components with server-side API.
-        </p>
-        <p class="mb-2 text-gray-600">
-          Designed and implemented UI/UX improvements based on user feedback and
-          analytics.
-        </p>
-      </div>
-      <br />
-      <p class="reveal mb-2 text-lg font-bold text-gray-800">Projects</p>
-      <div class="text-center">
-        <ul class="text-2xl pl-4 mb-4 font-bold text-gray-800">
-          <div class="reveal">
-            <li>
-              <a href="https://zainabalkhudairi.com/">Zainab Alkhudairi</a>
-            </li>
-          </div>
-          <img
-            src="src/ZK1.png"
-            alt="1"
-            class="image zoom inline-block my-10 w-80 h-80 rounded-lg"
-          />
-          <img
-            src="src/ZK2.png"
-            alt="2"
-            class="image zoom inline-block my-10 w-80 h-80 rounded-lg"
-          />
-          <img
-            src="src/ZK3.png"
-            alt="3"
-            class="image zoom inline-block my-10 w-80 h-80 rounded-lg"
-          />
-          <div class="reveal">
-            <li>
-              <a href="https://github.com/muralaali/raw"
-                >Senior Project - Raw App</a
-              >
-            </li>
-          </div>
-          <img
-            src="src/SP1.png"
-            alt="1"
-            class="image zoom inline-block my-10 w-80 h-80 rounded-lg"
-          />
-          <img
-            src="src/SP2.png"
-            alt="2"
-            class="image zoom inline-block my-10 w-80 h-80 rounded-lg"
-          />
-          <img
-            src="src/SP3.png"
-            alt="3"
-            class="image zoom inline-block my-10 w-80 h-80 rounded-lg"
-          />
-        </ul>
+            <img
+              src="src/Photos/5.png"
+              alt="2"
+              class="image zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
+            />
+            <img
+              src="src/Photos/6.png"
+              alt="3"
+              class="image zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
+            />
+          </ul>
+        </div>
       </div>
 
-      <!-- Computer Technician -->
-      <div class="reveal-2 py-4">
-        <h3 class="text-2xl font-bold mb-2 text-gray-800">
-          Computer Technician
-        </h3>
-        <p class="text-lg mb-2 text-gray-600">
-          Computer Repair Shop, Baton Rouge, Louisiana, USA (June 2021 -
-          December 2021)
-        </p>
-        <p class="mb-2 text-gray-600">
-          Provided technical support to clients regarding hardware and software
-          issues.
-        </p>
-        <p class="mb-2 text-gray-600">
-          Managed network systems and ensured data security and integrity.
-        </p>
-        <p class="mb-2 text-gray-600">
-          Assisted in setting up and maintaining IT infrastructure for clients.
-        </p>
-      </div>
-
-      <!-- Video Editing Tutor -->
-      <div class="reveal-2 py-4">
-        <h3 class="text-2xl font-bold mb-2 text-gray-800">
-          Video Editing Tutor
-        </h3>
-        <p class="text-lg mb-2 text-gray-600">
-          UK Training Centre, United Kingdom (2019 - Present)
-        </p>
-        <p class="mb-2 text-gray-600">
-          Conducted online and in-person video editing courses for beginners and
-          intermediate learners.
-        </p>
-        <p class="mb-2 text-gray-600">
-          Designed course materials and provided personalized feedback to
-          students.
-        </p>
-        <p class="mb-2 text-gray-600">
-          Created video tutorials for online learning platforms.
-        </p>
-      </div>
-
-      <!-- Marketing Assistant -->
-      <div class="reveal-2 py-4">
-        <h3 class="text-2xl font-bold mb-2 text-gray-800">
-          Marketing Assistant
-        </h3>
-        <p class="text-lg mb-2 text-gray-600">
-          Sayed Mahfood Al Aali, Bahrain (2016 – 2020)
-        </p>
-        <p class="mb-2 text-gray-600">
-          Assisted in planning and executing marketing campaigns for clients.
-        </p>
-        <p class="mb-2 text-gray-600">
-          Conducted market research and analyzed data to identify target
-          audience and improve campaign effectiveness.
-        </p>
-        <p class="mb-2 text-gray-600">
-          Managed social media accounts and created content for clients.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Photography and Videography Section -->
-<section class="bg-gray-200 py-8">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2
-      id="photography"
-      class="reveal zoom text-4xl font-bold leading-none mb-2 text-gray-800 text-center"
-    >
-      Photography and Videography
-    </h2>
-    <div class="text-center">
-      <a href="https://www.instagram.com/murtadhaalaali/"
-        ><img
-          src="src/instagram.png"
-          alt="Windows"
-          class="reveal mort inline-block mt-12 w-10 h-10 rounded-lg"
-      /></a>
-    </div>
-    <h2
-      class="reveal zoom font-bold leading-none mt-2 mb-10 text-gray-800 text-center"
-    >
-      @murtadhaalaali
-    </h2>
-
-    <div class="text-center">
-      <ul class="text-2xl pl-4 mb-4 font-bold">
-        <img
-          src="src/Photos/1.png"
-          alt="1"
-          class="image zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
-        />
-        <img
-          src="src/Photos/2.png"
-          alt="2"
-          class="image zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
-        />
-        <img
-          src="src/Photos/3.png"
-          alt="3"
-          class="image zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
-        />
-        <img
-          src="src/Photos/4.png"
-          alt="1"
-          class="image zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
-        />
-        <img
-          src="src/Photos/5.png"
-          alt="2"
-          class="image zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
-        />
-        <img
-          src="src/Photos/6.png"
-          alt="3"
-          class="image zoom object-cover inline-block my-1 w-80 h-80 rounded-lg"
-        />
-      </ul>
-    </div>
-  </div>
-
-  <!-- Video
+      <!-- Video
   <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1">
     <iframe
       width="320"
@@ -705,228 +848,285 @@
   </div>
 </section>
  -->
-  <!-- Video -->
+      <!-- Video -->
 
-  <!-- Education Section -->
-  <section class="bg-white py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2
-        id="certifications"
-        class="reveal zoom text-4xl font-bold leading-none mb-2 text-gray-800 text-center"
-      >
-        Education
-      </h2>
-      <div class="py-4">
-        <h3 class="reveal-2 text-2xl font-bold mb-2 text-gray-800">
-          Bachelor of Science in Computer Science (2016 - Present)
-        </h3>
-        <img
-          src="src/UOB.png"
-          alt="HTML"
-          class="reveal-2 zoom inline-block w-12 h-14 hover:animate-bounce"
-        />
-        <p class="text-lg mb-2 text-gray-600">University of Bahrain</p>
+      <!-- Education Section -->
+      <section class="bg-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            id="certifications"
+            class="reveal zoom text-4xl font-bold leading-none mb-2 text-teal-700 text-center"
+          >
+            Education
+          </h2>
+          <div class="py-4">
+            <h3 class="reveal-2 text-2xl font-bold mb-2 text-teal-600">
+              Bachelor of Science in Computer Science
+            </h3>
+            <img
+              src="src/UOB.png"
+              alt="HTML"
+              class="reveal-2 zoom inline-block w-12 h-14 hover:animate-bounce"
+            />
+            <p class="text-lg mb-2 text-teal-500">University of Bahrain</p>
+            <p
+              class="text-sm reveal-2 mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              Computer Science
+            </p>
+            <p
+              class="text-sm reveal-2 mb-8 mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              2016 –> Present
+            </p>
 
-        <h3 class="reveal-2 text-2xl font-bold mb-2 text-gray-800">
-          High School certificate (2013 - 2016)
-        </h3>
-        <img
-          src="src/tawoon.jpg"
-          alt="HTML"
-          class="reveal-2 zoom inline-block w-12 h-14 hover:animate-bounce"
-        />
-        <p class="reveal-2 text-lg mb-2 text-gray-600">
-          Al Taawon Secondary School - Bahrain
-        </p>
-        <h3 class="reveal-2 text-2xl font-bold mb-2 text-gray-800">
-          Intermediate certificate (2011 - 2013)
-        </h3>
-        <img
-          src="src/moe.png"
-          alt="HTML"
-          class="reveal-2 zoom inline-block w-12 h-14 hover:animate-bounce"
-        />
-        <p class="reveal-2 text-lg mb-2 text-gray-600">
-          A'ali Intermediate Boys School - Bahrain
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certifications and Courses Section -->
-  <section class="bg-gray-200 py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2
-        class="reveal zoom text-4xl font-bold leading-none mb-2 text-gray-800 text-center"
-      >
-        Certifications and Courses
-      </h2>
-      <div class="py-4">
-        <h3 class="reveal-2 text-2xl font-bold mb-2 text-gray-800">
-          British Council Certificate in English Language Proficiency
-        </h3>
-        <img
-          src="src/BritishCouncil_Logo.png"
-          alt="HTML"
-          class="reveal-2 zoom inline-block w-18 h-10 hover:animate-bounce"
-        />
-        <img
-          src="src/capital.jpg"
-          alt="HTML"
-          class="reveal-2 zoom inline-block w-14 h-6 hover:animate-bounce"
-        />
-
-        <p class="reveal-2 text-lg mb-2 text-gray-600">
-          Capital School of Cardiff, Cardiff, Wales, United Kingdom (2019)
-        </p>
-      </div>
-
-      <div class="py-4">
-        <h3 class="reveal-2 text-2xl font-bold mb-2 text-gray-800">
-          Toastmaster Course
-        </h3>
-        <img
-          src="src/Toastmasters.png"
-          alt="HTML"
-          class="reveal-2 zoom inline-block w-12 h-10 hover:animate-bounce"
-        />
-        <img
-          src="src/AaliCh.png"
-          alt="HTML"
-          class="reveal-2 zoom inline-block w-12 h-10 hover:animate-bounce"
-        />
-        <p class="reveal-2 text-lg mb-2 text-gray-600">
-          Aali Charity - Bahrain (2018)
-        </p>
-      </div>
-    </div>
-  </section>
-  <!-- Contact Section -->
-  <section class="bg-white py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2
-        id="contact"
-        class="zoom text-4xl font-bold leading-none mb-2 text-gray-800 text-center"
-      >
-        Contact Me
-      </h2>
-      <div class="py-4">
-        <p class="text-lg mb-2 text-gray-600">Email: malaali2012@gmail.com</p>
-        <p class="text-lg mb-2 text-gray-600">Phone: +97338889964</p>
-        <p class="text-lg mb-2 text-gray-600">
-          Address: Ramli 716, Road 1624, Villa 2659, Bahrain
-        </p>
-      </div>
-
-      <div class="py-4">
-        <h3 class="text-2xl font-bold mb-2 text-gray-800">Connect with Me</h3>
-        <div class="flex justify-center">
-          <a href="#" class="mx-2 text-gray-600 hover:text-gray-800"
-            ><i class="fab fa-facebook-square fa-2x"></i
-          ></a>
-          <a href="#" class="mx-2 text-gray-600 hover:text-gray-800"
-            ><i class="fab fa-twitter-square fa-2x"></i
-          ></a>
-          <a href="#" class="mx-2 text-gray-600 hover:text-gray-800"
-            ><i class="fab fa-linkedin fa-2x"></i
-          ></a>
+            <h3 class="reveal-2 text-2xl font-bold mb-2 text-teal-600">
+              High School certificate
+            </h3>
+            <img
+              src="src/tawoon.jpg"
+              alt="HTML"
+              class="reveal-2 zoom inline-block w-12 h-14 hover:animate-bounce"
+            />
+            <p class="reveal-2 text-lg mb-2 text-teal-500">
+              Al Taawon Secondary School - Bahrain
+            </p>
+            <p
+              class="text-sm reveal-2 mt-2 mb-8 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              Science
+            </p>
+            <p
+              class="text-sm reveal-2 mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              2013 -> 2016
+            </p>
+            <h3 class="reveal-2 text-2xl font-bold mb-2 text-teal-600">
+              Intermediate certificate
+            </h3>
+            <img
+              src="src/moe.png"
+              alt="HTML"
+              class="reveal-2 zoom inline-block w-12 h-14 hover:animate-bounce"
+            />
+            <p class="reveal-2 text-lg mb-2 text-teal-500">
+              A'ali Intermediate Boys School - Bahrain
+            </p>
+            <p
+              class="text-sm reveal-2 mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              Intermediate
+            </p>
+            <p
+              class="text-sm reveal-2 mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              2011 -> 2013
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- Footer Section -->
-  <footer class="bg-gray-800 py-4">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-center text-gray-400">
-        &copy; 2023 Murtadha Alaali. All rights reserved.
-      </p>
-    </div>
-  </footer>
+      </section>
 
-  <!-- Lightbox Script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-  <script>
-    function reveal() {
-      var reveals = document.querySelectorAll(".reveal");
-      for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add("active");
-        } else {
-          reveals[i].classList.remove("active");
+      <!-- Certifications and Courses Section -->
+      <section class="bg-teal-50 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="reveal zoom text-4xl font-bold leading-none mb-2 text-teal-700 text-center"
+          >
+            Certifications and Courses
+          </h2>
+          <div class="py-4">
+            <h3 class="reveal-2 text-2xl font-bold mb-2 text-teal-600">
+              British Council Certificate in English Language Proficiency
+            </h3>
+            <img
+              src="src/BritishCouncil_Logo.png"
+              alt="HTML"
+              class="reveal-2 zoom inline-block w-18 h-10 hover:animate-bounce"
+            />
+            <img
+              src="src/capital.jpg"
+              alt="HTML"
+              class="reveal-2 zoom inline-block w-14 h-6 hover:animate-bounce"
+            />
+
+            <p class="reveal-2 text-lg mb-2 text-teal-500">
+              Capital School of Cardiff, Cardiff, Wales, United Kingdom - 6
+              months course
+            </p>
+            <p
+              class="text-sm reveal-2 mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              English
+            </p>
+            <p
+              class="text-sm reveal-2 mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              2019
+            </p>
+          </div>
+
+          <div class="py-4">
+            <h3 class="reveal-2 text-2xl font-bold mb-2 text-teal-600">
+              Toastmaster Course
+            </h3>
+            <img
+              src="src/Toastmasters.png"
+              alt="HTML"
+              class="reveal-2 zoom inline-block w-12 h-10 hover:animate-bounce"
+            />
+            <img
+              src="src/AaliCh.png"
+              alt="HTML"
+              class="reveal-2 zoom inline-block w-12 h-10 hover:animate-bounce"
+            />
+            <p class="reveal-2 text-lg mb-2 text-teal-500">
+              Aali Charity - Bahrain (2018)
+            </p>
+            <p
+              class="text-sm reveal-2 mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              Toastmaster
+            </p>
+            <p
+              class="text-sm reveal-2 mt-2 text-teal-500 inline-block text-blue font-semibold py-2 px-4 rounded-md mr-2 border-2 border-teal-500"
+            >
+              2018
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section class="bg-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            id="contact"
+            class="zoom text-4xl font-bold leading-none mb-2 text-teal-700 text-center"
+          >
+            Contact Me
+          </h2>
+          <div class="py-4">
+            <p class="text-lg mb-2 text-teal-500">
+              Email: malaali2012@gmail.com
+            </p>
+            <p class="text-lg mb-2 text-teal-500">Phone: +97338889964</p>
+            <p class="text-lg mb-2 text-teal-500">
+              Address: Ramli 716, Road 1624, Villa 2659, Bahrain
+            </p>
+          </div>
+
+          <div class="py-4">
+            <h3 class="text-2xl font-bold mb-2 text-teal-600">
+              Connect with Me
+            </h3>
+            <div class="flex justify-center">
+              <a href="#" class="mx-2 text-gray-600 hover:text-gray-800"
+                ><i class="fab fa-facebook-square fa-2x"></i
+              ></a>
+              <a href="#" class="mx-2 text-gray-600 hover:text-gray-800"
+                ><i class="fab fa-twitter-square fa-2x"></i
+              ></a>
+              <a href="#" class="mx-2 text-gray-600 hover:text-gray-800"
+                ><i class="fab fa-linkedin fa-2x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer Section -->
+
+      <!-- Lightbox Script -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+      <script>
+        function reveal() {
+          var reveals = document.querySelectorAll(".reveal");
+          for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+              reveals[i].classList.add("active");
+            } else {
+              reveals[i].classList.remove("active");
+            }
+          }
         }
-      }
-    }
-    window.addEventListener("scroll", reveal);
+        window.addEventListener("scroll", reveal);
 
-    // To check the scroll position on page load
-    reveal();
+        // To check the scroll position on page load
+        reveal();
 
-    function reveal2() {
-      var reveals = document.querySelectorAll(".reveal-1, .reveal-2");
-      for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = windowHeight - reveals[i].clientHeight / 2;
-        if (elementTop < elementVisible) {
-          reveals[i].classList.add("active");
-        } else {
-          reveals[i].classList.remove("active");
+        function reveal2() {
+          var reveals = document.querySelectorAll(".reveal-1, .reveal-2");
+          for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = windowHeight - reveals[i].clientHeight / 2;
+            if (elementTop < elementVisible) {
+              reveals[i].classList.add("active");
+            } else {
+              reveals[i].classList.remove("active");
+            }
+          }
         }
-      }
-    }
 
-    const observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        } else {
-          entry.target.classList.remove("active");
+        const observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+            } else {
+              entry.target.classList.remove("active");
+            }
+          });
+        });
+
+        document.querySelectorAll(".reveal-2").forEach(function (element) {
+          observer.observe(element);
+        });
+
+        window.addEventListener("scroll", reveal2);
+        // To check the scroll position on page load
+        reveal2();
+
+        function animateOnScroll() {
+          var images = document.querySelectorAll(".image");
+          for (var i = 0; i < images.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = images[i].getBoundingClientRect().top;
+            var elementVisible = windowHeight - images[i].clientHeight / 2;
+            if (elementTop < elementVisible) {
+              images[i].classList.add("active");
+            } else {
+              images[i].classList.remove("active");
+            }
+          }
         }
-      });
-    });
 
-    document.querySelectorAll(".reveal-2").forEach(function (element) {
-      observer.observe(element);
-    });
+        const observer2 = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+            } else {
+              entry.target.classList.remove("active");
+            }
+          });
+        });
 
-    window.addEventListener("scroll", reveal2);
-    // To check the scroll position on page load
-    reveal2();
+        document.querySelectorAll(".image").forEach(function (element) {
+          observer2.observe(element);
+        });
 
-    function animateOnScroll() {
-      var images = document.querySelectorAll(".image");
-      for (var i = 0; i < images.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = images[i].getBoundingClientRect().top;
-        var elementVisible = windowHeight - images[i].clientHeight / 2;
-        if (elementTop < elementVisible) {
-          images[i].classList.add("active");
-        } else {
-          images[i].classList.remove("active");
-        }
-      }
-    }
+        window.addEventListener("scroll", animateOnScroll);
 
-    const observer2 = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        } else {
-          entry.target.classList.remove("active");
-        }
-      });
-    });
-
-    document.querySelectorAll(".image").forEach(function (element) {
-      observer2.observe(element);
-    });
-
-    window.addEventListener("scroll", animateOnScroll);
-
-    // To check the scroll position on page load
-    animateOnScroll();
-  </script>
-</section>
+        // To check the scroll position on page load
+        animateOnScroll();
+      </script>
+    </section>
+  </div>
+</body>
+<footer class="bg-teal-600 py-4">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-center text-teal-100">
+      &copy; 2023 Murtadha Alaali. All rights reserved.
+    </p>
+  </div>
+</footer>
